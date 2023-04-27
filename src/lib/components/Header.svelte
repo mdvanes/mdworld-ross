@@ -26,7 +26,6 @@
 <style>
 	header {
 		padding: 1rem;
-		/* background: #388e3c; */
 		background: rgb(22, 50, 22);
 		color: white;
 		display: flex;
