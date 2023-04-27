@@ -26,11 +26,12 @@ jobs:
         run: |
           npm ci
           npm run build
+          touch build/.nojekyll
         #     CI: false # true -> fails on warning
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           # token: ${{ secrets.GITHUB_TOKEN }}
-          branch: gh-pages # The branch the action should deploy to.
+          branch: gh-pages # The branch the action should deploy to. Requires: repo settings > Actions > General > Workflow permissions > "read and write". See https://github.com/JamesIves/github-pages-deploy-action/issues/1110#issuecomment-1117481234
           folder: build # The folder the action should deploy.
           clean: true # Automatically remove deleted files from the deploy branch
