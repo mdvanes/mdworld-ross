@@ -1,4 +1,4 @@
-interface MarkdownPost {
+export interface MarkdownPost {
 	meta: {
 		date?: string;
 		path?: string;

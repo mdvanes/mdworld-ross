@@ -1,17 +1,51 @@
 <script>
+	import Card from '$lib/components/Card.svelte';
 	export let data;
 </script>
 
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<h1>MDWORLD</h1>
+<h2>a webdevelopment blog, since 2003</h2>
 
-{#each data.posts as post}
-	<div>
-		<h2>
-			<a href={post.path}>
-				{post.meta.title}
-			</a>
-		</h2>
-		Published {post.meta.date}
+<div class="columns">
+	<div class="post-list">
+		{#each data.posts as post}
+			<Card {post} />
+		{/each}
 	</div>
-{/each}
+	<aside>Add something here</aside>
+</div>
+
+<style>
+	h1 {
+		font-family: 'Roboto', sans-serif;
+		font-size: 9.5vw;
+		line-height: 1em;
+		margin: 0;
+	}
+
+	h2 {
+		margin-top: 0;
+		margin-left: 0.5rem;
+	}
+
+	.columns {
+		display: flex;
+		gap: 30px;
+	}
+
+	.columns .post-list {
+		flex: 1;
+	}
+
+	.columns aside {
+		background-color: rgba(0, 0, 0, 0.2);
+		padding: 1rem;
+		width: 300px;
+	}
+
+	.post-list {
+		display: flex;
+		flex-direction: column;
+		gap: 10px;
+	}
+</style>
