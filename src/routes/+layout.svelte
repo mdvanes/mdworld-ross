@@ -1,8 +1,11 @@
-<script>
+<script lang="ts">
 	import '$lib/styles/style.scss';
-    import '$lib/styles/prism-duotone-sea.css';
+	import '$lib/styles/prism-duotone-sea.css';
 	import Header from '$lib/components/Header.svelte';
 	import Footer from '$lib/components/Footer.svelte';
+	import { fade } from 'svelte/transition';
+
+	export let data;
 </script>
 
 <svelte:head>
@@ -16,8 +19,10 @@
 
 <Header />
 
-<main class="main-column">
-	<slot />
-</main>
+{#key data.currentRoute}
+	<main class="main-column" in:fade={{ duration: 150, delay: 150 }} out:fade={{ duration: 150 }}>
+		<slot />
+	</main>
+{/key}
 
 <Footer />
