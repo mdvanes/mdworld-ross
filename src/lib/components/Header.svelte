@@ -11,12 +11,14 @@
 					<a href="https://github.com/mdvanes/"><img src="images/github.svg" alt="Github" /></a>
 				</li>
 				<li>
-					<a href="https://mastodon.social/@mdworld"
+					<a href="https://mastodon.social/@mdworld" rel="me"
 						><img src="images/mastodon.svg" alt="Mastodon" /></a
 					>
 				</li>
 				<li>
-					<a href="https://www.linkedin.com/in/mdvanes/"><img src="images/linkedin.svg" alt="LinkedIn" /></a>
+					<a href="https://www.linkedin.com/in/mdvanes/"
+						><img src="images/linkedin.svg" alt="LinkedIn" /></a
+					>
 				</li>
 			</ul>
 		</nav>

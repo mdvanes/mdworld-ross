@@ -1,17 +1,13 @@
-<script>
-	import '$lib/components/Card.scss';
-	// TODO use type
-	// import { MarkdownPost } from '$lib/utils/fetchMarkdownPosts';
-	/**
-	 * @type string
-	 */
-	export let imgpath;
-	/**
-	 * @type string
-	 */
-	export let imgtitle;
+<script lang="ts">
+	import '$lib/components/Lightbox.scss';
+	export let imgpath: string;
+	export let imgtitle: string;
+
+	const handleClick = () => {
+		alert('NYI');
+	};
 </script>
 
-<div class="card">
+<button class="lightbox" on:click={handleClick}>
 	<img width="500" src={imgpath} alt={imgtitle} />
-</div>
+</button>

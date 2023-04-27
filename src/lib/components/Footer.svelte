@@ -26,7 +26,7 @@
 <style>
 	footer {
 		padding: 1rem;
-		background: rgb(69, 69, 69);
+		background: rgb(22, 50, 22);
 		color: white;
 		display: flex;
 		justify-content: center;

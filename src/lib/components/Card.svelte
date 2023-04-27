@@ -1,11 +1,7 @@
-<script>
-    import '$lib/components/Card.scss';
-    // TODO use type
-	// import { MarkdownPost } from '$lib/utils/fetchMarkdownPosts';
-	/**
-	 * @type {{ path: any; meta: { title: any; date: any; }; }}
-	 */
-	export let post;
+<script lang="ts">
+	import '$lib/components/Card.scss';
+	import type { MarkdownPost } from '$lib/utils/fetchMarkdownPosts';
+	export let post: MarkdownPost;
 </script>
 
 <div class="card">
