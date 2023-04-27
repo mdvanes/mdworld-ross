@@ -3,7 +3,7 @@
 </script>
 
 <footer>
-	<div class="footer-container">
+	<div class="footer-container main-column">
 		<a href="https://creativecommons.org/licenses/by-nc-sa/3.0/"
 			><img src="images/by-nc-sa.eu.svg" alt="creative commons" height="50px" />
 			<div>2003-{currentYear} MDWORLD</div></a
@@ -23,8 +23,6 @@
 	}
 
 	.footer-container {
-		width: 100%;
-		max-width: 1024px;
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: center;

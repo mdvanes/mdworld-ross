@@ -15,7 +15,7 @@
 
 <Header />
 
-<main>
+<main class="main-column">
 	<slot />
 </main>
 

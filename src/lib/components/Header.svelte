@@ -1,5 +1,5 @@
 <header>
-	<div class="header-container">
+	<div class="header-container main-column">
 		<a href="/"><img src="logos/logo-48.png" alt="logo" /> MDWorld, a webdevelopment blog</a>
 
 		<nav>
@@ -34,8 +34,6 @@
 	}
 
 	.header-container {
-		width: 100%;
-		max-width: 1024px;
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: space-between;
