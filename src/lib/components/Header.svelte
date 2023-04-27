@@ -1,6 +1,6 @@
 <header>
 	<div class="header-container">
-		<a href="/"><img src="/" /> MDWorld, a webdevelopment blog</a>
+		<a href="/"><img src="logos/logo-48.png" alt="logo" /> MDWorld, a webdevelopment blog</a>
 
 		<nav>
 			<ul>
@@ -8,13 +8,15 @@
 					<a href="/about">About</a>
 				</li>
 				<li>
-					<a href="/contact">G</a>
+					<a href="https://github.com/mdvanes/"><img src="images/github.svg" alt="Github" /></a>
 				</li>
 				<li>
-					<a href="/contact">Mastodon</a>
+					<a href="https://mastodon.social/@mdworld"
+						><img src="images/mastodon.svg" alt="Mastodon" /></a
+					>
 				</li>
 				<li>
-					<a href="/contact">LI</a>
+					<a href="https://www.linkedin.com/in/mdvanes/"><img src="images/linkedin.svg" alt="LinkedIn" /></a>
 				</li>
 			</ul>
 		</nav>
@@ -24,7 +26,8 @@
 <style>
 	header {
 		padding: 1rem;
-		background: #388e3c;
+		/* background: #388e3c; */
+		background: rgb(22, 50, 22);
 		color: white;
 		display: flex;
 		justify-content: center;
@@ -37,6 +40,15 @@
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: space-between;
+		align-items: center;
+	}
+
+	.header-container > a {
+		display: flex;
+		align-items: center;
+		gap: 20px;
+		font-size: 1.5rem;
+		font-weight: bold;
 	}
 
 	ul {
@@ -49,5 +61,10 @@
 	a {
 		text-decoration: none;
 		color: inherit;
+	}
+
+	nav img {
+		filter: invert(1);
+		height: 20px;
 	}
 </style>
