@@ -16,8 +16,8 @@ body > div {
 }
 
 .main-column {
-    max-width: 1280px;
-    width: 100%;
+	max-width: 1280px;
+	width: 100%;
 }
 
 main {
@@ -29,4 +29,26 @@ main {
 
 a {
 	color: white;
+}
+
+article {
+	h1 {
+		color: white;
+		font-size: 2.5rem;
+	}
+
+	.meta {
+		font-family: 'Roboto';
+		font-size: 0.9rem;
+		display: flex;
+		gap: 50px;
+
+		.pill {
+			background-color: white;
+			color: green;
+			display: inline-block;
+			padding: 0 1rem;
+			text-decoration: none;
+		}
+	}
 }

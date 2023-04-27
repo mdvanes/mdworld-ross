@@ -16,4 +16,6 @@
 	Shying away from runtime component libraries or CSS sets, the target is to make a package that is
 	a small as possible. The Gatsby version of this blog has a speed index of 0.7. This version has a
 	speed index of ...
+
+	A secondary purpose is to learn Svelte.
 </p>
