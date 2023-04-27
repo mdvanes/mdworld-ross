@@ -6,6 +6,12 @@
 	<li>Build by Github Actions</li>
 	<li>Source control on <a href="https://github.com/mdvanes/mdworld-ross">Github</a></li>
 	<li>Theme inspired by dev.to</li>
+	<li>
+		Static Site Generation inspired by <a
+			href="https://joshcollinsworth.com/blog/build-static-sveltekit-markdown-blog"
+			>Josh Collinsworth's article</a
+		>
+	</li>
 </ul>
 
 <p>
@@ -16,6 +22,6 @@
 	Shying away from runtime component libraries or CSS sets, the target is to make a package that is
 	a small as possible. The Gatsby version of this blog has a speed index of 0.7. This version has a
 	speed index of ...
-
-	A secondary purpose is to learn Svelte.
 </p>
+
+<p>A secondary purpose is to learn Svelte.</p>
