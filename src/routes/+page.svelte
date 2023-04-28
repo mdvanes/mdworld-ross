@@ -30,11 +30,13 @@
 
 	.columns {
 		display: flex;
+		flex-wrap: wrap;
 		gap: 30px;
 	}
 
 	.columns .post-list {
 		flex: 1;
+		min-width: 400px;
 	}
 
 	.columns aside {
