@@ -36,7 +36,6 @@
 
   .columns .post-list {
     flex: 1;
-    min-width: 400px;
   }
 
   .columns aside {
