@@ -1,31 +1,27 @@
 export interface MarkdownPost {
-	meta: {
-		title?: string;
-		date?: string;
-		category?: string;
-	};
-	content: any;
-	path?: string;
+  meta: {
+    title?: string;
+    date?: string;
+    category?: string;
+  };
+  path?: string;
 }
 
 export const fetchMarkdownPosts = async (): Promise<MarkdownPost[]> => {
-	const allPostFiles = import.meta.glob('/src/posts/*.md');
-	const iterablePostFiles = Object.entries(allPostFiles);
+  const allPostFiles = import.meta.glob('/src/posts/*.md');
+  const iterablePostFiles = Object.entries(allPostFiles);
 
-	const allPosts = await Promise.all(
-		iterablePostFiles.map(async ([path, resolver]) => {
-			const x = (await resolver()) as { metadata: MarkdownPost['meta'], default: any };
-			const postPath = path.slice(11, -3);
-			console.log(x);
+  const allPosts = await Promise.all(
+    iterablePostFiles.map(async ([path, resolver]) => {
+      const { metadata } = (await resolver()) as { metadata: MarkdownPost['meta'] };
+      const postPath = path.slice(11, -3);
 
-			return {
-				meta: x.metadata,
-				path: postPath,
-				// TODO broken, because x.default is not serializable
-				content: x.default,
-			} as MarkdownPost;
-		})
-	);
+      return {
+        meta: metadata,
+        path: postPath
+      } as MarkdownPost;
+    })
+  );
 
-	return allPosts;
+  return allPosts;
 };
