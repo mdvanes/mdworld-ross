@@ -22,7 +22,8 @@ const config = {
     adapter: adapter(),
     paths: {
       // TODO only set when deployed to test environment, see nextjs blog
-      base: dev ? '' : '/mdworld-ross'
+      // Does not build anymore with base. Trying workaround with data-sveltekit-reload
+      //   base: dev ? '' : '/mdworld-ross'
     }
   },
 
