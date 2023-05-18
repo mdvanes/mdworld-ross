@@ -1,5 +1,43 @@
 .lightbox {
-    cursor: pointer;
-    border: none;
-    padding: 0;
+  cursor: pointer;
+  border: none;
+  padding: 0;
+
+  img {
+    width: 500px;
+    max-width: calc(100vw - 2rem);
+  }
+}
+
+.lightbox__dialog {
+  width: calc(100vw - 2rem);
+
+  &::backdrop {
+    background: rgba(0, 0, 0, 0.7);
+  }
+
+  img {
+    width: 100%;
+  }
+
+  .lightbox__dialog-header {
+    display: flex;
+
+    h1 {
+      color: black;
+      flex: 1;
+      font-size: 1.5rem;
+      font-family: 'Roboto', sans-serif;
+    }
+
+    button {
+      aspect-ratio: 1;
+      border-radius: 50%;
+      border: none;
+      background-color: black;
+      color: white;
+      cursor: pointer;
+      font-size: 1.5rem;
+    }
+  }
 }
