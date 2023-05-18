@@ -13,9 +13,9 @@
     description: data.preview,
     images: [
       {
-        url: 'https://mdworld.nl/mdworld-ross/logos/logo-1024.png',
-        width: 256,
-        height: 256,
+        url: 'https://mdworld.nl/mdworld-ross/logos/logo-48.png',
+        width: 48,
+        height: 48,
         alt: 'MDWorld Logo'
       }
     ],
