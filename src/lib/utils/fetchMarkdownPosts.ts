@@ -23,7 +23,7 @@ export interface MarkdownPost extends Omit<RawMarkdownPost, 'metadata'> {
   metadata: Omit<RawMarkdownPost['metadata'], 'previewHtml'> & { sanitizedPreviewHtml: string };
 }
 
-export const fetchMarkdownPosts = async (): Promise<Omit<MarkdownPost, 'default'>[]> => {
+export const fetchMarkdownPosts = async (): Promise<MarkdownPost[]> => {
   const allPostFiles = import.meta.glob('/src/posts/*.md');
   const iterablePostFiles = Object.entries(allPostFiles);
 
