@@ -1,6 +1,7 @@
 import adapter from '@sveltejs/adapter-static';
 import { vitePreprocess } from '@sveltejs/kit/vite';
 import { mdsvex } from 'mdsvex';
+import preview, { textFormatter } from 'remark-preview';
 
 const dev = process.env.NODE_ENV === 'development';
 
@@ -11,7 +12,11 @@ const config = {
   preprocess: [
     vitePreprocess(),
     mdsvex({
-      extensions: ['.md']
+      extensions: ['.md'],
+      remarkPlugins: [
+        // Add a text preview snippet (no formatting) so we can use it in the meta description tag
+        preview(textFormatter({ length: 250, maxBlocks: 2 }))
+      ]
     })
   ],
 

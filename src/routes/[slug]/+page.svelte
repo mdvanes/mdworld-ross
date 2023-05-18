@@ -5,17 +5,17 @@
 </script>
 
 <MetaTags
-  title="Example Title"
-  description="Example Description."
+  title={data.title}
+  description={data.preview}
   openGraph={{
-    url: 'https://mdworld.nl', // TODO
+    url: `https://mdworld.nl/${data.currentRoute}`,
     title: data.title,
-    description: 'Open Graph Description', // TODO
+    description: data.preview,
     images: [
       {
         url: 'https://mdworld.nl/mdworld-ross/logos/logo-1024.png',
-        width: 1024,
-        height: 1024,
+        width: 256,
+        height: 256,
         alt: 'MDWorld Logo'
       }
     ],
@@ -24,7 +24,7 @@
 />
 
 <article>
-  <!-- TODO add header image1 . -->
+  <!-- TODO add header image1 .. -->
   <h1>{data.title}</h1>
   <p class="meta">
     <span>Published: {data.date}</span> <a href="/" class="pill">{data.category}</a>
