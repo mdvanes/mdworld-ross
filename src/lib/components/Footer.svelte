@@ -21,6 +21,8 @@
         Hosted on <a href="https://pages.github.com">Github Pages</a>, domain at
         <a href="https://vdx.nl">VDX.nl</a>
       </p>
+      <a class="rss" href="https://mdworld.nl/rss.xml"><img src="images/rss.svg" alt="RSS" /> RSS</a
+      >
     </div>
   </div>
 </footer>
@@ -49,5 +51,9 @@
     color: inherit;
     align-items: center;
     gap: 30px;
+  }
+
+  .rss {
+	text-decoration: none;
   }
 </style>
