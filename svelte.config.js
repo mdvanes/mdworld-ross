@@ -2,9 +2,9 @@ import adapter from '@sveltejs/adapter-static';
 import { vitePreprocess } from '@sveltejs/kit/vite';
 import { mdsvex } from 'mdsvex';
 import preview, { htmlFormatter, textFormatter } from 'remark-preview';
-import readingTime from 'remark-reading-time';
+// import readingTime from 'remark-reading-time';
 
-const dev = process.env.NODE_ENV === 'development';
+// const dev = process.env.NODE_ENV === 'development';
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
@@ -15,7 +15,8 @@ const config = {
     mdsvex({
       extensions: ['.md'],
       remarkPlugins: [
-        readingTime(),
+        // https://github.com/spences10/scottspence.com/blob/ac1fec4445aa5733fe3132aa7840c40d1f8c0ef0/mdsvex.config.js
+        // readingTime(),
         preview(textFormatter({ length: 250, maxBlocks: 2 })),
         preview(
           htmlFormatter({

@@ -7,12 +7,15 @@ export const convertDMYToYMD = (dmy: string): string => {
 
 const convertDMYToMs = (dmy: string): number => new Date(convertDMYToYMD(dmy)).getTime();
 
-export const sortPostsAscending = (a: MarkdownPost, b: MarkdownPost) => {
-  if (!a.meta.date) {
+export const sortPostsAscending = (
+  a: { metadata: MarkdownPost['metadata'] },
+  b: { metadata: MarkdownPost['metadata'] }
+) => {
+  if (!a.metadata.date) {
     return -1;
   }
-  if (!b.meta.date) {
+  if (!b.metadata.date) {
     return 1;
   }
-  return convertDMYToMs(b.meta.date) - convertDMYToMs(a.meta.date);
+  return convertDMYToMs(b.metadata.date) - convertDMYToMs(a.metadata.date);
 };

@@ -5,12 +5,12 @@
 </script>
 
 <MetaTags
-  title={data.title}
-  description={data.preview}
+  title={data.metadata.title}
+  description={data.metadata.preview}
   openGraph={{
     url: `https://mdworld.nl/${data.currentRoute}`,
-    title: data.title,
-    description: data.preview,
+    title: data.metadata.title,
+    description: data.metadata.preview,
     images: [
       {
         url: 'https://mdworld.nl/mdworld-ross/logos/logo-48.png',
@@ -24,10 +24,11 @@
 />
 
 <article>
-  <!-- TODO add header image1 .. -->
-  <h1>{data.title}</h1>
+  <h1>{data.metadata.title}</h1>
+  <!-- TODO extract -->
   <p class="meta">
-    <span>Published: {data.date}</span> <a href="/" class="pill">{data.category}</a>
+    <span>Published: {data.metadata.date}</span>
+    <a href="/" class="pill">{data.metadata.category}</a>
   </p>
-  <svelte:component this={data.content} />
+  <svelte:component this={data.default} />
 </article>
