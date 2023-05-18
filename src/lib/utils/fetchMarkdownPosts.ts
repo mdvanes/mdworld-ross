@@ -17,6 +17,7 @@ interface RawMarkdownPost {
   };
   path?: string;
   default?: ConstructorOfATypedSvelteComponent | null | undefined;
+  currentRoute?: string;
 }
 
 export interface MarkdownPost extends Omit<RawMarkdownPost, 'metadata'> {

@@ -1,6 +1,7 @@
 <script lang="ts">
   import '$lib/components/Card.scss';
   import type { MarkdownPost } from '$lib/utils/fetchMarkdownPosts';
+  import ArticleMeta from './ArticleMeta/ArticleMeta.svelte';
 
   export let post: MarkdownPost;
 </script>
@@ -11,9 +12,7 @@
       {post.metadata.title}
     </a>
   </h2>
-  <!-- TODO restyle, add category -->
-  Published {post.metadata.date}
-  <a href="/" class="pill">{post.metadata.category}</a>
+  <ArticleMeta metadata={post.metadata} />
   <a data-sveltekit-reload class="preview" href={post.path}>
     {@html post.metadata.sanitizedPreviewHtml}
   </a>

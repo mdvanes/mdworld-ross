@@ -1,7 +1,9 @@
-<script>
+<script lang="ts">
+  import ArticleMeta from '$lib/components/ArticleMeta/ArticleMeta.svelte';
+  import type { MarkdownPost } from '$lib/utils/fetchMarkdownPosts';
   import { MetaTags } from 'svelte-meta-tags';
 
-  export let data;
+  export let data: MarkdownPost;
 </script>
 
 <MetaTags
@@ -25,10 +27,6 @@
 
 <article>
   <h1>{data.metadata.title}</h1>
-  <!-- TODO extract -->
-  <p class="meta">
-    <span>Published: {data.metadata.date}</span>
-    <a href="/" class="pill">{data.metadata.category}</a>
-  </p>
+  <ArticleMeta metadata={data.metadata} />
   <svelte:component this={data.default} />
 </article>
