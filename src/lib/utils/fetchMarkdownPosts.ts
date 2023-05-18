@@ -3,8 +3,12 @@ export interface MarkdownPost {
     title?: string;
     date?: string;
     category?: string;
+    preview?: string;
+    previewHtml?: string;
+    cover?: string;
   };
   path?: string;
+  default: ConstructorOfATypedSvelteComponent | null | undefined;
 }
 
 export const fetchMarkdownPosts = async (): Promise<MarkdownPost[]> => {

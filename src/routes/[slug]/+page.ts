@@ -8,9 +8,12 @@ export const load = async ({ fetch, params }) => {
     const slugWithTimestamp: MarkdownPost = await response.json();
 
     // NOTE if the .md file is renamed to not be prefixed with the timestamp, the md files will not be sorted in the dir
-    const post = await import(`../../posts/${slugWithTimestamp}.md`);
+    const post: {
+      metadata: MarkdownPost['meta'];
+      default: MarkdownPost['default'];
+    } = await import(`../../posts/${slugWithTimestamp}.md`);
 
-    const { title, date, category, preview } = post.metadata;
+    const { title, date, category, preview, previewHtml, cover } = post.metadata;
     const content = post.default;
 
     return {
@@ -18,7 +21,9 @@ export const load = async ({ fetch, params }) => {
       title,
       date,
       category,
-      preview
+      preview,
+      previewHtml,
+      cover
     };
   } catch (err) {
     throw error(404, 'post not found ¯\\_(ツ)_/¯');
