@@ -1,7 +1,7 @@
 <script lang="ts">
-  import '$lib/components/Card.scss';
+  import '$lib/components/Card/Card.scss';
   import type { MarkdownPost } from '$lib/utils/fetchMarkdownPosts';
-  import ArticleMeta from './ArticleMeta/ArticleMeta.svelte';
+  import ArticleMeta from '../ArticleMeta/ArticleMeta.svelte';
 
   export let post: MarkdownPost;
 </script>

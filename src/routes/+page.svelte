@@ -1,5 +1,5 @@
 <script>
-  import Card from '$lib/components/Card.svelte';
+  import Card from '$lib/components/Card/Card.svelte';
   export let data;
 </script>
 
