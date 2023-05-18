@@ -5,20 +5,20 @@
 		<link rel="icon" href="./favicon.png" />
 		<meta name="viewport" content="width=device-width" />
 		<meta http-equiv="content-security-policy" content="">
-		<link href="./_app/immutable/assets/_layout.f105405f.css" rel="stylesheet">
-		<link href="./_app/immutable/assets/2022-03-30-micro-frontends-in-a-nutshell.24a02fd7.css" rel="stylesheet">
-		<link rel="modulepreload" href="./_app/immutable/entry/start.53c51d0c.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/index.53021437.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/singletons.49364cc2.js">
+		<link href="./_app/immutable/assets/_layout.ea9a84d7.css" rel="stylesheet">
+		<link href="./_app/immutable/assets/2022-03-30-micro-frontends-in-a-nutshell.ef707f92.css" rel="stylesheet">
+		<link rel="modulepreload" href="./_app/immutable/entry/start.c4494bd9.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/index.b959fa76.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/singletons.23517ac0.js">
 		<link rel="modulepreload" href="./_app/immutable/chunks/control.e7f5239e.js">
-		<link rel="modulepreload" href="./_app/immutable/entry/app.01ee9d9e.js">
+		<link rel="modulepreload" href="./_app/immutable/entry/app.919ec084.js">
 		<link rel="modulepreload" href="./_app/immutable/chunks/preload-helper.41c905a7.js">
-		<link rel="modulepreload" href="./_app/immutable/entry/_layout.svelte.eff66af3.js">
+		<link rel="modulepreload" href="./_app/immutable/entry/_layout.svelte.76817397.js">
 		<link rel="modulepreload" href="./_app/immutable/entry/_layout.ts.3ea2b760.js">
 		<link rel="modulepreload" href="./_app/immutable/chunks/_layout.6a830c33.js">
-		<link rel="modulepreload" href="./_app/immutable/entry/_slug_-page.svelte.f111e821.js">
-		<link rel="modulepreload" href="./_app/immutable/entry/_slug_-page.ts.fa5a9a58.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/_page.012021fe.js"><!-- HEAD_svelte-rre9b6_START --><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="true"><link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto:wght@400;700&display=swap" rel="stylesheet"><meta property="og:image" content="https://mdworld.nl/mdworld-ross/logos/logo-1024.png"><!-- HEAD_svelte-rre9b6_END -->
+		<link rel="modulepreload" href="./_app/immutable/entry/_slug_-page.svelte.b80b7732.js">
+		<link rel="modulepreload" href="./_app/immutable/entry/_slug_-page.ts.c7211610.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/_page.3e0686c4.js"><!-- HEAD_svelte-rre9b6_START --><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="true"><link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto:wght@400;700&display=swap" rel="stylesheet"><meta property="og:image" content="https://mdworld.nl/mdworld-ross/logos/logo-1024.png"><!-- HEAD_svelte-rre9b6_END -->
 	</head>
 	<body data-sveltekit-preload-data="hover">
 		<div style="display: contents">
@@ -26,12 +26,12 @@
 
 
 
-<header class="svelte-15j2q0y"><div class="header-container main-column svelte-15j2q0y"><a href="/" class="svelte-15j2q0y"><img src="logos/logo-48.png" alt="logo"> MDWorld, a webdevelopment blog</a>
+<header class="svelte-1d7bivz"><div class="header-container main-column svelte-1d7bivz"><a href="/" class="svelte-1d7bivz"><img src="logos/logo-48.png" alt="logo"> MDWorld, a webdevelopment blog</a>
 
-		<nav class="svelte-15j2q0y"><ul class="svelte-15j2q0y"><li><a href="/about" class="svelte-15j2q0y">About</a></li>
-				<li><a href="https://github.com/mdvanes/" class="svelte-15j2q0y"><img src="images/github.svg" alt="Github" class="svelte-15j2q0y"></a></li>
-				<li><a href="https://mastodon.social/@mdworld" rel="me" class="svelte-15j2q0y"><img src="images/mastodon.svg" alt="Mastodon" class="svelte-15j2q0y"></a></li>
-				<li><a href="https://www.linkedin.com/in/mdvanes/" class="svelte-15j2q0y"><img src="images/linkedin.svg" alt="LinkedIn" class="svelte-15j2q0y"></a></li></ul></nav></div>
+    <nav class="svelte-1d7bivz"><ul class="svelte-1d7bivz"><li><a href="/about" class="svelte-1d7bivz">About</a></li>
+        <li><a href="https://github.com/mdvanes/" class="svelte-1d7bivz"><img src="images/github.svg" alt="Github" class="svelte-1d7bivz"></a></li>
+        <li><a href="https://mastodon.social/@mdworld" rel="me" class="svelte-1d7bivz"><img src="images/mastodon.svg" alt="Mastodon" class="svelte-1d7bivz"></a></li>
+        <li><a href="https://www.linkedin.com/in/mdvanes/" class="svelte-1d7bivz"><img src="images/linkedin.svg" alt="LinkedIn" class="svelte-1d7bivz"></a></li></ul></nav></div>
 </header>
 
 <main class="main-column"><article><h1>Micro Frontends In A Nutshell</h1>
@@ -65,20 +65,36 @@ Consider this schematic representation of a web application:</p>
 
 
 <p><simple-light-box img-path="/lightbox/mfe/page.svg" img-title="Overview of a page"></simple-light-box></p>
-<button class="lightbox"><img width="500" src="/lightbox/mfe/page.svg" alt="Overview of a page"></button>
+<button class="lightbox"><img src="/lightbox/mfe/page.svg" alt="Overview of a page"></button>
+
+<dialog class="lightbox__dialog"><div class="lightbox__dialog-header"><h1>Overview of a page</h1>
+    <div><button>✕</button></div></div>
+  <img src="/lightbox/mfe/page.svg" alt="Overview of a page"></dialog>
 <p>This could be implemented with different platforms like Angular and React by wrapping them in Web Components:</p>
-<button class="lightbox"><img width="500" src="/lightbox/mfe/web-components.svg" alt="Web Components"></button>
+<button class="lightbox"><img src="/lightbox/mfe/web-components.svg" alt="Web Components"></button>
+
+<dialog class="lightbox__dialog"><div class="lightbox__dialog-header"><h1>Web Components</h1>
+    <div><button>✕</button></div></div>
+  <img src="/lightbox/mfe/web-components.svg" alt="Web Components"></dialog>
 <p>Module Federation is the newest solution and many libraries are still adapting to it. Last year, Nx 12 released with support for Webpack 5 and Module Federation. See a real working example here <a href="https://code-star.github.io/nx-reference-shell/" rel="nofollow">https://code-star.github.io/nx-reference-shell/</a> or its source in <a href="https://github.com/code-star/nx-reference" rel="nofollow">https://github.com/code-star/nx-reference</a>.</p>
 <p>Because Micro Frontends break up a codebase into smaller, more manageable fragments, they are often mentioned in combination with Monorepo solutions like Nx or yarn/npm workspaces. However, it is perfectly possible to implement Micro Frontends without monorepos!</p>
 <h2><em>When</em> to use Micro Frontends?</h2>
 <p>New technology inspires developers to experiment, but Micro Frontends and with that Module Federation are not worth the upkeep for small to medium applications. All-in solutions like Next or Gatsby are great fits for smaller applications and custom Angular applications, when well organized, scale very well up to enterprise level.</p>
 <p>However, no framework inherently supports older versions of itself. So if a big bang migration from AngularJS to Angular or any other framework for that matter, you’ll end up with some kind of Micro Frontends solution. Plenty of enterprise codebases currently use some combination of hyperlinks and deployment monoliths.</p>
 <p>This could look like a bank that offers a set of public pages (e.g. the general home page, and the landing pages of its departments) referencing each other with hyperlinks and a protected monolith app with many components (e.g. checking account, subscriptions to bank products, investments on one page).</p>
-<button class="lightbox"><img width="500" src="/lightbox/mfe/hyperlinks-and-monolith.svg" alt="Hyperlinks and Monolith"></button>
+<button class="lightbox"><img src="/lightbox/mfe/hyperlinks-and-monolith.svg" alt="Hyperlinks and Monolith"></button>
+
+<dialog class="lightbox__dialog"><div class="lightbox__dialog-header"><h1>Hyperlinks and Monolith</h1>
+    <div><button>✕</button></div></div>
+  <img src="/lightbox/mfe/hyperlinks-and-monolith.svg" alt="Hyperlinks and Monolith"></dialog>
 <p>Exploring Module Federation can be worth it if continuous integration is slowed down too much because of the large amounts of tests and compilation of all the involved components. But note that there are other approaches, such as using Nx monorepos with properly set up hierarchy and running only affected tests.</p>
 <p>Another reason to use Module Federation can be the need to support multiple frameworks. Compared to Web Components, Module Federation improves the runtime isolation of components while simultaneously reducing isolation of shared dependencies to reduce the overall footprint of the application.</p>
 <p>Compare to the diagram for the earlier example using macro Web Components, you can see that lodash, Angular and React are only loaded once, despite being used by multiple isolated components:</p>
-<button class="lightbox"><img width="500" src="/lightbox/mfe/module-federation.svg" alt="Module Federation"></button>
+<button class="lightbox"><img src="/lightbox/mfe/module-federation.svg" alt="Module Federation"></button>
+
+<dialog class="lightbox__dialog"><div class="lightbox__dialog-header"><h1>Module Federation</h1>
+    <div><button>✕</button></div></div>
+  <img src="/lightbox/mfe/module-federation.svg" alt="Module Federation"></dialog>
 <h2>Want to know more?</h2>
 <p>If you want to know more about Micro Frontends, Module Federation or Monorepos, you can contact met at <a href="https://twitter.com/mdworldNL" rel="nofollow">@mdworldNL</a> on Twitter. We have experience with enterprise frontend at all the major banks and many governmental departments in the Netherlands.</p>
 <p>When you want more background information as a developer, you can also read the articles provided below.</p>
@@ -106,7 +122,7 @@ Consider this schematic representation of a web application:</p>
 			<script type="application/json" data-sveltekit-fetched data-url="/api/post/micro-frontends-in-a-nutshell">{"status":200,"statusText":"","headers":{},"body":"\"2022-03-30-micro-frontends-in-a-nutshell\""}</script>
 			<script>
 				{
-					__sveltekit_ds5dtp = {
+					__sveltekit_7x6g7w = {
 						base: new URL(".", location).pathname.slice(0, -1),
 						env: {}
 					};
@@ -116,8 +132,8 @@ Consider this schematic representation of a web application:</p>
 					const data = [null,null];
 
 					Promise.all([
-						import("./_app/immutable/entry/start.53c51d0c.js"),
-						import("./_app/immutable/entry/app.01ee9d9e.js")
+						import("./_app/immutable/entry/start.c4494bd9.js"),
+						import("./_app/immutable/entry/app.919ec084.js")
 					]).then(([kit, app]) => {
 						kit.start(app, element, {
 							node_ids: [0, 4],
