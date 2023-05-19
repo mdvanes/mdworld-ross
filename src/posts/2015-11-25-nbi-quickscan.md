@@ -21,4 +21,4 @@ This is my first real privately produced Android app, although I've worked on se
 
 The app was built with the [Ionic framework](http://ionicframework.com/) and contains many [Karma unit tests](http://karma-runner.github.io/) for the calculations. It also provided me with an interesting source of working with [Gulp](http://gulpjs.com/) and [Cordova hooks](https://cordova.apache.org/docs/en/dev/guide/appdev/hooks/).
 
-![screenshot](nbi-quickscan.png)
+![screenshot](lightbox/nbi/nbi-quickscan.png)
