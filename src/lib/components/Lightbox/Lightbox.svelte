@@ -1,5 +1,5 @@
 <script lang="ts">
-  import '$lib/components/Lightbox.scss';
+  import '$lib/components/Lightbox/Lightbox.scss';
 
   export let imgpath: string;
   export let imgtitle: string;
