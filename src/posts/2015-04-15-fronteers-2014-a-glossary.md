@@ -128,7 +128,7 @@ As I noted in [my previous post about Fronteers 2014](../fronteers-2014-css/) th
 
 <p>A <a href="https://www.npmjs.com/package/penthouse">node module</a> (with a <a href="https://www.npmjs.com/package/grunt-penthouse">grunt plugin</a> and an <a href="http://jonassebastianohlsson.com/criticalpathcssgenerator/">online tool</a>) to generate the critical path of CSS to speed up page rendering. The browser waits with displaying any page until the CSS is loaded or times out eventually, resulting in a blank page. Of course it is always recommendable to have the CSS combined and minified (and gzipped), but if performance is important it might be an option to load it inline (!) to prevent failing on bad connections. </p>
 
-<p>Instead of loading all the CSS inline, you can convert the critical CSS for the first page (the above-the-fold CSS) to inline CSS in the document head and load the full CSS in the bottom of the body, where the JavaScript sources should be as well. Extracting this critical CSS is what Penthouse does.</a>
+<p>Instead of loading all the CSS inline, you can convert the critical CSS for the first page (the above-the-fold CSS) to inline CSS in the document head and load the full CSS in the bottom of the body, where the JavaScript sources should be as well. Extracting this critical CSS is what Penthouse does.</p>
 </div>
 
 <div class="gloss js">
