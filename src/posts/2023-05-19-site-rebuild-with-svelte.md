@@ -28,7 +28,7 @@ An important requirement to keep from the previous theme, is to support code in 
 This is markdown text
 
 <script>
-import Lightbox from '$lib/components/Lightbox.svelte'
+import Lightbox from '$lib/components/Lightbox/Lightbox.svelte'
 </script>
 
 <Lightbox imgpath="/lightbox/mfe/module-federation.svg" imgtitle="Module Federation" />
@@ -38,7 +38,7 @@ Which is rendered as a clickable image:
 
 <Lightbox imgpath="/lightbox/mfe/module-federation.svg" imgtitle="Module Federation" />
 
-See the code for the `Lightbox` component in the [mdworld-ross repo](https://github.com/mdvanes/mdworld-ross/blob/main/src/lib/components/Lightbox.svelte).
+See the code for the `Lightbox` component in the [mdworld-ross repo](https://github.com/mdvanes/mdworld-ross/blob/main/src/lib/components/Lightbox/Lightbox.svelte).
 
 The only missing technology from my wishlist was Deno, because of my preference for TypeScript. My
 first SSG attempt [deno-ssg-blog](https://github.com/mdvanes/deno-ssg-blog) used a library that

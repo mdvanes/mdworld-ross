@@ -8,7 +8,7 @@ tags:
 ---
 
 <script>
-import Lightbox from '$lib/components/Lightbox.svelte'
+import Lightbox from '$lib/components/Lightbox/Lightbox.svelte'
 </script>
 
 You may have heard of a Micro Frontends recently and felt it a bit difficult to grasp what exactly it is and if it is something you should get involved in. I'll try to give a summary of the what, why, how, and when of the current state. To provide a high-over summary, I'll also add some recommended reading if you would like to get more details.
@@ -53,10 +53,6 @@ I won't go into all the details about the pros and cons of each of these solutio
 Note that solutions can be combined: you can have a deployment monolith (that expects components that are all using the same stack) but wrap components in Web Components to provide an abstraction layer and use different stacks to produce the Web Components. Additionally, you can use Web Components in combination with Module Federation for instance if you are migrating towards Module Federation as a Micro Frontends solution.
 Consider this schematic representation of a web application:
 
-<!-- <img width="500" src="/lightbox/mfe/page.svg" /> -->
-<!-- TODO hyphen in prop names? -->
-
-<simple-light-box img-path="/lightbox/mfe/page.svg" img-title="Overview of a page"></simple-light-box>
 <Lightbox imgpath="/lightbox/mfe/page.svg" imgtitle="Overview of a page" />
 
 This could be implemented with different platforms like Angular and React by wrapping them in Web Components:
