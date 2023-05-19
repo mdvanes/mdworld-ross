@@ -33,10 +33,10 @@ ${posts
   .map(
     (post) => `<item>
 <guid isPermaLink="true">${siteURL}/${post.path?.slice(11)}</guid>
-<title>${post.meta.title}</title>
+<title>${post.metadata.title}</title>
 <link>${siteURL}/${post.path?.slice(11)}</link>
-<description>${post.meta.title}</description>
-<pubDate>${new Date(convertDMYToYMD(post.meta?.date ?? '')).toUTCString()}</pubDate>
+<description>${post.metadata.title}</description>
+<pubDate>${new Date(convertDMYToYMD(post.metadata?.date ?? '')).toUTCString()}</pubDate>
 </item>`
   )
   .join('')}
