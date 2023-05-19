@@ -52,6 +52,8 @@ back-end) or local fields. Both utilize the Apollo cache, which fulfills multipl
 
 Example of wrapping a component in a Query HOC:
 
+<!-- TODO prev/next post buttons -->
+
 ```javascript
 const Books = ({ data: { books } }) => (
   <ul>
