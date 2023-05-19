@@ -7,20 +7,23 @@
 		<meta http-equiv="content-security-policy" content="">
 		<link href="./_app/immutable/assets/_layout.a8eb9529.css" rel="stylesheet">
 		<link href="./_app/immutable/assets/ArticleMeta.abc8c39f.css" rel="stylesheet">
-		<link href="./_app/immutable/assets/2022-03-30-micro-frontends-in-a-nutshell.ef707f92.css" rel="stylesheet">
-		<link rel="modulepreload" href="./_app/immutable/entry/start.9c489567.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/index.0eacb17f.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/singletons.4227f754.js">
+		<link href="./_app/immutable/assets/2014-11-29-on-reactive.1d166b07.css" rel="stylesheet">
+		<link href="./_app/immutable/assets/2015-01-20-fronteers-2014-css.c1f1e55f.css" rel="stylesheet">
+		<link href="./_app/immutable/assets/2015-04-15-fronteers-2014-a-glossary.7246c081.css" rel="stylesheet">
+		<link href="./_app/immutable/assets/Lightbox.ef707f92.css" rel="stylesheet">
+		<link rel="modulepreload" href="./_app/immutable/entry/start.6fce2719.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/index.ce9a7868.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/singletons.67fe5572.js">
 		<link rel="modulepreload" href="./_app/immutable/chunks/control.e7f5239e.js">
-		<link rel="modulepreload" href="./_app/immutable/entry/app.e74f374d.js">
+		<link rel="modulepreload" href="./_app/immutable/entry/app.ce30c858.js">
 		<link rel="modulepreload" href="./_app/immutable/chunks/preload-helper.41c905a7.js">
-		<link rel="modulepreload" href="./_app/immutable/entry/_layout.svelte.6766cc46.js">
+		<link rel="modulepreload" href="./_app/immutable/entry/_layout.svelte.21d95704.js">
 		<link rel="modulepreload" href="./_app/immutable/entry/_layout.ts.3ea2b760.js">
 		<link rel="modulepreload" href="./_app/immutable/chunks/_layout.6a830c33.js">
-		<link rel="modulepreload" href="./_app/immutable/entry/_slug_-page.svelte.d0037dca.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/ArticleMeta.873ebe30.js">
-		<link rel="modulepreload" href="./_app/immutable/entry/_slug_-page.ts.6c0a9adf.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/_page.4a21e549.js">
+		<link rel="modulepreload" href="./_app/immutable/entry/_slug_-page.svelte.e3581657.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/ArticleMeta.7263f2c0.js">
+		<link rel="modulepreload" href="./_app/immutable/entry/_slug_-page.ts.bbf96a0d.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/_page.640cd393.js">
 		<link rel="modulepreload" href="./_app/immutable/chunks/index.2defaa64.js"><title>Apollo Client in Practice</title><!-- HEAD_svelte-1or47vi_START --><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="true"><link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto:wght@400;700&display=swap" rel="stylesheet"><!-- HEAD_svelte-1or47vi_END --><!-- HEAD_svelte-1h7w4y4_START --><meta name="robots" content="index,follow"><meta name="googlebot" content="index,follow"><meta name="description" content="Some time ago I joined a team that is working on a search application. The application takes search terms and displays
 the results in a table with potentially dozens of columns and hundreds
 of rows, even before pagination. It is implemented in React..."><meta property="og:url" content="https://mdworld.nl//apollo-client-in-practice">
@@ -97,6 +100,7 @@ directly in the component lifecycle methods, components are split into a present
 <a href="https://www.apollographql.com/docs/react/api/react-apollo#graphql" rel="nofollow">graphql()</a> HOC to add data from remote (i.e. GraphQL
 back-end) or local fields. Both utilize the Apollo cache, which fulfills multiple functions, one of them an application local state store.</p>
 <p>Example of wrapping a component in a Query HOC:</p>
+
 <pre class="language-javascript"><!-- HTML_TAG_START --><code class="language-javascript"><span class="token keyword">const</span> <span class="token function-variable function">Books</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token parameter"><span class="token punctuation">&#123;</span> <span class="token literal-property property">data</span><span class="token operator">:</span> <span class="token punctuation">&#123;</span> books <span class="token punctuation">&#125;</span> <span class="token punctuation">&#125;</span></span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">(</span>
   <span class="token operator">&lt;</span>ul<span class="token operator">></span>
     <span class="token punctuation">&#123;</span>books<span class="token punctuation">.</span><span class="token function">map</span><span class="token punctuation">(</span><span class="token parameter">book</span> <span class="token operator">=></span> <span class="token operator">&lt;</span>li<span class="token operator">></span><span class="token punctuation">&#123;</span>book<span class="token punctuation">.</span>title<span class="token punctuation">&#125;</span><span class="token operator">&lt;</span><span class="token operator">/</span>li<span class="token operator">></span><span class="token punctuation">&#125;</span>
@@ -173,7 +177,7 @@ management by Sara Vieira</a>.</p></article></main>
 			<script type="application/json" data-sveltekit-fetched data-url="/api/post/apollo-client-in-practice">{"status":200,"statusText":"","headers":{},"body":"\"2019-05-02-apollo-client-in-practice\""}</script>
 			<script>
 				{
-					__sveltekit_1pgwjis = {
+					__sveltekit_16nhjxs = {
 						base: new URL(".", location).pathname.slice(0, -1),
 						env: {}
 					};
@@ -183,8 +187,8 @@ management by Sara Vieira</a>.</p></article></main>
 					const data = [null,null];
 
 					Promise.all([
-						import("./_app/immutable/entry/start.9c489567.js"),
-						import("./_app/immutable/entry/app.e74f374d.js")
+						import("./_app/immutable/entry/start.6fce2719.js"),
+						import("./_app/immutable/entry/app.ce30c858.js")
 					]).then(([kit, app]) => {
 						kit.start(app, element, {
 							node_ids: [0, 4],
