@@ -53,18 +53,18 @@ For more information about the current stack, see the [about page](../about).
 Static versions of the 2 last themes still run [here (2013-2018)](https://mdvanes.github.io/mdworld-ingram)
 and [here (2010-2013)](https://mdvanes.github.io/mdworld-simon).
 
-**Theme 2018-2023**
+## Theme 2018-2023
 
-<simple-light-box img-path="/lightbox/theme-ingram.jpg" img-title="Theme 2013-2018"></simple-light-box>
+<Lightbox imgpath="/lightbox/site-rebuild-with-svelte/theme-jackson.jpg" imgtitle="Theme 2018-2023" />
 
-**Theme 2013-2018**
+## Theme 2013-2018
 
-<simple-light-box img-path="/lightbox/theme-ingram.jpg" img-title="Theme 2013-2018"></simple-light-box>
+<Lightbox imgpath="/lightbox/site-rebuild-with-svelte/theme-ingram.jpg" imgtitle="Theme 2013-2018" />
 
-**Theme 2010-2013**
+## Theme 2010-2013
 
-<simple-light-box img-path="/lightbox/theme-simon.jpg" img-title="Theme 2010-2013"></simple-light-box>
+<Lightbox imgpath="/lightbox/site-rebuild-with-svelte/theme-simon.jpg" imgtitle="Theme 2010-2013" />
 
-**Theme until 2010**
+## Theme until 2010
 
 <Lightbox imgpath="https://mdvanes.github.io/mdworld-simon/sites/default/files/images/vorig_design.jpg" imgtitle="Theme until 2010" />
