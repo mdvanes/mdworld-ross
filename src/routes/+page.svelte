@@ -11,6 +11,9 @@
     {#each data.posts as post}
       <Card {post} />
     {/each}
+    <p>
+      Looking for even older posts? <a href="https://mdvanes.github.io/mdworld-simon">Go here</a>.
+    </p>
   </div>
   <aside>Add something here</aside>
 </div>

@@ -5,7 +5,7 @@ interface RawMarkdownPost {
     title?: string;
     date?: string;
     category?: string;
-    readingTime: {
+    readingTime?: {
       text: string;
       minutes: number;
       time: number;
