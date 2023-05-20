@@ -1,6 +1,13 @@
+<script>
+  import DynamicLogo from './DynamicLogo/DynamicLogo.svelte';
+</script>
+
 <header>
   <div class="header-container main-column">
-    <a href="/"><img src="logos/logo-48.png" alt="logo" /> MDWorld, a webdevelopment blog</a>
+    <a href="/"
+      ><DynamicLogo />
+      <span>MDWorld, a webdevelopment blog</span>
+    </a>
 
     <nav>
       <ul>
@@ -48,6 +55,7 @@
     gap: 20px;
     font-size: 1.5rem;
     font-weight: bold;
+    flex-grow: 1;
   }
 
   ul {
