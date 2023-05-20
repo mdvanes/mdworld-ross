@@ -31,12 +31,12 @@ This is markdown text
 import Lightbox from '$lib/components/Lightbox/Lightbox.svelte'
 </script>
 
-<Lightbox imgpath="/lightbox/mfe/module-federation.svg" imgtitle="Module Federation" />
+<Lightbox imgPath="/lightbox/mfe/module-federation.svg" imgTitle="Module Federation" />
 ```
 
 Which is rendered as a clickable image:
 
-<Lightbox imgpath="/lightbox/mfe/module-federation.svg" imgtitle="Module Federation" />
+<Lightbox imgPath="/lightbox/mfe/module-federation.svg" imgTitle="Module Federation" />
 
 See the code for the `Lightbox` component in the [mdworld-ross repo](https://github.com/mdvanes/mdworld-ross/blob/main/src/lib/components/Lightbox/Lightbox.svelte).
 
@@ -55,16 +55,16 @@ and [here (2010-2013)](https://mdvanes.github.io/mdworld-simon).
 
 ## Theme 2018-2023
 
-<Lightbox imgpath="/lightbox/site-rebuild-with-svelte/theme-jackson.jpg" imgtitle="Theme 2018-2023" />
+<Lightbox imgPath="/lightbox/site-rebuild-with-svelte/theme-jackson.jpg" imgTitle="Theme 2018-2023" />
 
 ## Theme 2013-2018
 
-<Lightbox imgpath="/lightbox/site-rebuild-with-svelte/theme-ingram.jpg" imgtitle="Theme 2013-2018" />
+<Lightbox imgPath="/lightbox/site-rebuild-with-svelte/theme-ingram.jpg" imgTitle="Theme 2013-2018" />
 
 ## Theme 2010-2013
 
-<Lightbox imgpath="/lightbox/site-rebuild-with-svelte/theme-simon.jpg" imgtitle="Theme 2010-2013" />
+<Lightbox imgPath="/lightbox/site-rebuild-with-svelte/theme-simon.jpg" imgTitle="Theme 2010-2013" />
 
 ## Theme until 2010
 
-<Lightbox imgpath="https://mdvanes.github.io/mdworld-simon/sites/default/files/images/vorig_design.jpg" imgtitle="Theme until 2010" />
+<Lightbox imgPath="https://mdvanes.github.io/mdworld-simon/sites/default/files/images/vorig_design.jpg" imgTitle="Theme until 2010" />

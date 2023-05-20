@@ -1,8 +1,8 @@
 <script lang="ts">
   import '$lib/components/Lightbox/Lightbox.scss';
 
-  export let imgpath: string;
-  export let imgtitle: string;
+  export let imgPath: string;
+  export let imgTitle: string;
 
   let lightboxDialog: HTMLDialogElement;
 
@@ -20,15 +20,15 @@
 </script>
 
 <button class="lightbox" on:click={handleClick}>
-  <img src={imgpath} alt={imgtitle} />
+  <img src={imgPath} alt={imgTitle} />
 </button>
 
 <dialog class="lightbox__dialog" bind:this={lightboxDialog}>
   <div class="lightbox__dialog-header">
-    <h1>{imgtitle}</h1>
+    <h1>{imgTitle}</h1>
     <div>
       <button on:click={handleClose}>✕</button>
     </div>
   </div>
-  <img src={imgpath} alt={imgtitle} />
+  <img src={imgPath} alt={imgTitle} />
 </dialog>
