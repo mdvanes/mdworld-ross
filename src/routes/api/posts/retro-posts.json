@@ -17,24 +17,7 @@
     "hash": "9c9d3dc526a9ef09f95492a84baa08c8133e9d7a",
     "webpCover": "/cover/16b18689b1a63a1a86bbb54beefb55a192b0bee7.webp"
   },
-  {
-    "title": "New Site!",
-    "cover": "/cover/",
-    "date": "09-11-2013",
-    "category": "webdevelopment",
-    "path": "https://mdvanes.github.io/mdworld-ingram/webdevelopment/2013/11/09/new-site/",
-    "hash": "314a31858df1eb6deccb4af6c52743b60a2df00c",
-    "webpCover": "/cover/509fd69edc920698bb0ff1acfb4610682622f3d5.webp"
-  },
-  {
-    "title": "CDN, Relative URLs and local testing",
-    "cover": "/cover/",
-    "date": "13-05-2013",
-    "category": "webdevelopment",
-    "path": "https://mdvanes.github.io/mdworld-ingram/webdevelopment/2013/05/13/cdn-relative-urls-and-local-testing/",
-    "hash": "b1eb6574071ee2eecb04e8dc4ca2f978694f39f1",
-    "webpCover": "/cover/86c059d92be30b73a2fbe42fbe5c8da5f52f3a60.webp"
-  },
+ 
   {
     "title": "Play and Sass",
     "cover": "/cover/",
