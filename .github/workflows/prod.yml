@@ -12,7 +12,7 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [18.x]
+        node-version: [20.x]
 
     steps:
       - name: Checkout 🛎️
@@ -30,7 +30,7 @@ jobs:
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          token: ${{ secrets.ACCESS_TOKEN }} # Access token from the Prod repo, set in Settings > Secrets
+          token: ${{ secrets.ACCESS_TOKEN }} # Access token get from Developer Settings > PAT > Fine-grained tokens > "deploy_mdworld_ross" (allow "contents"), set in mdworld-ross > Settings > Secrets & Variables > Actions
           repository-name: mdvanes/mdvanes.github.io
           branch: main # The branch the action should deploy to.
           folder: build # The folder the action should deploy.
