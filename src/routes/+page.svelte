@@ -1,7 +1,11 @@
 <script>
   import Card from '$lib/components/Card/Card.svelte';
+  import { MetaTags } from 'svelte-meta-tags';
+
   export let data;
 </script>
+
+<MetaTags title="MDworld" description="a webdevelopment blog" />
 
 <h1>MDWORLD</h1>
 <h2>a webdevelopment blog, since 2003</h2>

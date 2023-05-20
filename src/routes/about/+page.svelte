@@ -1,3 +1,9 @@
+<script>
+  import { MetaTags } from 'svelte-meta-tags';
+</script>
+
+<MetaTags title="MDworld" description="a webdevelopment blog" />
+
 <h1>About mdworld.nl</h1>
 
 <ul>
