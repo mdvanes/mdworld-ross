@@ -1,6 +1,6 @@
 # mdworld theme "Ross"
 
-![Deploy to Test](https://github.com/mdvanes/mdworld-ross/actions/workflows/test.yml/badge.svg)
+![Deploy to Prod](https://github.com/mdvanes/mdworld-ross/actions/workflows/prod.yml/badge.svg)
 
 Stack for mdworld.nl. Uses SSG with [SvelteKit](https://www.gatsbyjs.org/docs/) (PWA traits), Svelte, and TypeScript. Hosting on Github Pages and VDX.
 
