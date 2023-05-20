@@ -15,7 +15,7 @@
       Looking for even older posts? <a href="https://mdvanes.github.io/mdworld-simon">Go here</a>.
     </p>
   </div>
-  <aside>Add something here</aside>
+  <aside>To contact me reach out on <a href="https://mastodon.social/@mdworld">Mastodon</a></aside>
 </div>
 
 <style>
