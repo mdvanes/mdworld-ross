@@ -50,8 +50,7 @@ For more information about the current stack, see the [about page](../about).
 
 # Old themes
 
-Static versions of the 2 last themes still run [here (2013-2018)](https://mdvanes.github.io/mdworld-ingram)
-and [here (2010-2013)](https://mdvanes.github.io/mdworld-simon).
+Static versions of the 3 last themes still run [here (2010-2013)](https://mdvanes.github.io/mdworld-simon), [here (2013-2018)](https://mdvanes.github.io/mdworld-ingram), and [here (2018-2023)](https://mdvanes.github.io/mdworld-jackson).
 
 ## Theme 2018-2023
 
