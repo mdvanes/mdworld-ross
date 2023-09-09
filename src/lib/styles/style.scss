@@ -46,4 +46,8 @@ article {
   a {
     word-break: break-all;
   }
+
+  .katex-display > .katex {
+    text-align: left;
+  }
 }

@@ -1,35 +1,15 @@
 import adapter from '@sveltejs/adapter-static';
 import { vitePreprocess } from '@sveltejs/kit/vite';
 import { mdsvex } from 'mdsvex';
-import preview, { htmlFormatter, textFormatter } from 'remark-preview';
+import { mdsvexConfig } from './mdsvex.config.js';
 // import readingTime from 'remark-reading-time';
-
 // const dev = process.env.NODE_ENV === 'development';
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
   // Consult https://kit.svelte.dev/docs/integrations#preprocessors
   // for more information about preprocessors
-  preprocess: [
-    vitePreprocess(),
-    mdsvex({
-      extensions: ['.md'],
-      remarkPlugins: [
-        // https://github.com/spences10/scottspence.com/blob/ac1fec4445aa5733fe3132aa7840c40d1f8c0ef0/mdsvex.config.js
-        // readingTime(),
-        preview(textFormatter({ length: 250, maxBlocks: 2 })),
-        preview(
-          htmlFormatter({
-            length: 250,
-            maxBlocks: 2
-          }),
-          {
-            attribute: 'previewHtml'
-          }
-        )
-      ]
-    })
-  ],
+  preprocess: [vitePreprocess(), mdsvex(mdsvexConfig)],
 
   kit: {
     // adapter-auto only supports some environments, see https://kit.svelte.dev/docs/adapter-auto for a list.
