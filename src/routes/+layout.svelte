@@ -1,6 +1,7 @@
 <script lang="ts">
   import '$lib/styles/style.scss';
-  import '$lib/styles/prism-duotone-sea.css';
+  // Source: https://github.com/PrismJS/prism-themes
+  import '$lib/styles/prism-a11y-dark.css';
   import Header from '$lib/components/Header.svelte';
   import Footer from '$lib/components/Footer.svelte';
   import { fade } from 'svelte/transition';
@@ -15,6 +16,7 @@
     href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto:wght@400;700&display=swap"
     rel="stylesheet"
   />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.0/dist/katex.min.css" integrity="sha384-Xi8rHCmBmhbuyyhbI88391ZKP2dmfnOl4rT9ZfRI7mLTdk1wblIUnrIq35nqwEvC" crossorigin="anonymous" />
 </svelte:head>
 
 <Header />

@@ -25,6 +25,7 @@
     "mdsvex": "^0.10.6",
     "prettier": "^2.8.0",
     "prettier-plugin-svelte": "^2.8.1",
+    "rehype-katex": "^6.0.3",
     "remark-preview": "^1.0.2",
     "remark-reading-time": "1.0.1",
     "sanitize-html": "^2.10.0",
