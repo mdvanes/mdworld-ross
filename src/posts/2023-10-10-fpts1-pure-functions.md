@@ -86,6 +86,6 @@ const addRandom = (x: number): number => simpleAdd(x, Math.random());
 
 This way, the undeterministic lines are code are limited to the absolute minimum.
 
-Another good way to limit side effects is by employing immutability, which will be the topic of the next article.
+Another good way to limit side effects is by employing immutability, which will be the topic of the next chapter.
 
 _Acknowledgement:_ this article was inspired by the course [Functional-Light JavaScript, v3 by Kyle Simpson](https://frontendmasters.com/courses/functional-javascript-v3/).

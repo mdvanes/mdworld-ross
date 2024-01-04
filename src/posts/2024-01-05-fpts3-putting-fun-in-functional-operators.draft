@@ -1,0 +1,123 @@
+---
+title: 'FP & TS chapter 3: Putting fun in functional operators'
+cover: ''
+date: '05-06-2024'
+category: 'webdevelopment'
+tags:
+  - webdevelopment
+  - FP & TS
+---
+
+When you have been developing in TypeScript for a while, you are probably already using the functional operators, even if you don't realize it. 
+
+The operators `Array.prototype.map`, `Array.prototype.filter`, and `Array.prototype.reduce` are native JavaScript methods that are used to iterate over
+collections without mutating the original collection. 
+
+Let's first look at imperative style iteration. It's possible to iterate over different types of objects, e.g.
+
+- string: `const x = "123";`
+- array:  `const x = [1, 2, 3];`
+- array-like objects: e.g. NodeList `const x = document.querySelectorAll('div');`
+- Map, Set: `const x = new Set([1,2,3]);`
+
+The oldest way in JavaScript to iterate is with the `for` statement, e.g. to iterate over the characters in a string:
+
+```typescript
+const str = "123";
+for (let i = 0; i < str.length; i++) {
+    console.log(str[i]);
+}
+```
+
+This also works for Arrays, but to use it with Sets, you would first have to convert it to an Array.
+Also, this is quite verbose, because you have to manually define the counter `i`. Alternatively, the shorthand `for...of` can be used to solve both issues:
+
+```typescript
+const x = new Set([1,2,3]);
+for (const elem of x) {
+  console.log(elem);
+}
+```
+
+## The map operator
+
+With immutability in mind, what is wrong with this example?
+
+```typescript
+const sourceArr = [1,2,3];
+const squareArr = [];
+for( const item of sourceArr ) {
+    squareArr.push(item * item);
+}
+console.log(squareArr);
+```
+
+The `squareArr` is mutated, and we want to avoid that it is unexpectedly manipulated. Let's encapsulate the iteration in a function, so `squareArr` can't be mutated outside that function:
+
+```typescript
+const sourceArr = [1,2,3];
+
+const mapSquare = (arr) => {
+    const squareArr = [];
+    for( const item of arr ) {
+        squareArr.push(item * item);
+    }
+    return squareArr;
+}
+
+console.log(mapSquare(sourceArr));
+```
+
+That's much safer! Now we can also build a more abstract function that can iteratively apply any function, instead of always squaring the value.
+
+```typescript
+const sourceArr = [1,2,3];
+
+const map = (arr, fn) => {
+    const resultArr = [];
+    for( const item of sourceArr ) {
+        resultArr.push(fn(item));
+    }
+    return resultArr;
+}
+
+const square = item => item * item;
+
+console.log(map(sourceArr, square));
+```
+
+The `map` function returns a value, unlike the `for...of` loop from the initial example. The function `map` is a higher-order function, because it takes a function `fn` as a parameter. The function `square` is a pure function, and is trivial to unit test. 
+
+Although it's good to see how we could implement the `map` function, it's natively supported in TypeScript (with `Array.prototype.map`) as well as in many utility libraries like [Lodash](https://lodash.com).
+
+```typescript
+const sourceArr = [1,2,3];
+const square = item => item * item;
+console.log(sourceArr.map(x => square(x)));
+```
+
+Because `Array.prototype.map` expects a function with the iterated item as a parameter, and `square` *is* a function with an item as a parameter, the `map` call can be reduced to:
+
+```typescript
+console.log(sourceArr.map(square));
+```
+
+The conclusion that these two expressions are equivalent, is proven by what is called "equational reasoning".
+
+The `map` function can also be explicitely typed to expect to return a `number`. That implies that the result of the `map` calls is always expected to an array of numbers.
+
+```typescript
+const sourceArr: number[] = [1, 2, 3];
+const square = (item: number): number => item * item;
+console.log(sourceArr.map<number>(square));
+```
+
+
+
+## TODO
+
+TODO Map, filter, reduce, type guards, .forEach
+TODO Other Chapter? Role of declarative style in fp (operators)
+TODO Chapter 4? HoF, Currying.
+
+_Acknowledgement:_ this article was inspired by the course [Functional-Light JavaScript, v3 by Kyle Simpson](https://frontendmasters.com/courses/functional-javascript-v3/).
