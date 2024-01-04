@@ -1,7 +1,7 @@
 ---
 title: 'FP & TS chapter 2: Immutability'
 cover: ''
-date: '03-11-2023'
+date: '04-01-2024'
 category: 'webdevelopment'
 tags:
   - webdevelopment
@@ -139,5 +139,7 @@ const nextState = produce(baseState, (draft) => {
 In this example, `draft` is **not** mutable. It was made immutable by Immer. But the method `push` still updates it like you would expect from mutable object. It does this by internally copying the object.
 
 While the library itself is solid, it introduces one drawback that you should be very wary of in my opinion: someone who is not familiar with Immer might be confused and think this object is mutable. At a bad moment, it may even be copy-pasted to a place that is not protected by Immer. That's why I would not disregard the more verbose, but explicitly immutable, alternatives.
+
+In the next chapter we will look at the functional operators.
 
 _Acknowledgement:_ this article was inspired by the course [Functional-Light JavaScript, v3 by Kyle Simpson](https://frontendmasters.com/courses/functional-javascript-v3/).
