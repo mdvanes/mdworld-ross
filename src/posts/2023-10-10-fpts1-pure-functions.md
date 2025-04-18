@@ -8,9 +8,9 @@ tags:
   - FP & TS
 ---
 
-If you have made the concious decision to prefer TypeScript over JavaScript, you probably were convinced by its promise to reduce runtime errors. Without knowing anything about Functional Programming (FP from now on), it fulfills the same role. That's why FP and TS go hand in hand, in my opinion.
+If you have made the concious decision to prefer TypeScript over JavaScript, you were probably convinced by its promise to reduce runtime errors. Without knowing anything about Functional Programming (FP from now on), it fulfills the same role. That's why FP and TS go hand in hand, in my opinion.
 
-This should become a series of articles, where each article dives deeper into FP paradigmes. But we start with two core concepts, pure functions & immutability. These concepts, even on themselves, will promote cleaner coding and can be applied in any TypeScript project without libraries. More advanced concepts of FP are build on these principles, and that makes them a great place to start.
+This should become a series of articles, where each article dives deeper into FP paradigms. But we start with two core concepts, pure functions & immutability. These concepts, even by themselves, will promote cleaner coding and can be applied in any TypeScript project without libraries. More advanced concepts of FP are build on these principles, and that makes them a great place to start.
 
 ## Pure functions
 
@@ -84,8 +84,8 @@ const simpleAdd = (x: number, y: number): number => x + y;
 const addRandom = (x: number): number => simpleAdd(x, Math.random());
 ```
 
-This way, the undeterministic lines are code are limited to the absolute minimum.
+This way the undeterministic lines of code are limited to the absolute minimum.
 
-Another good way to limit side effects is by employing immutability, which will be the topic of the next chapter.
+Another good way to limit side effects is by employing immutability, which will be the topic of the [next chapter](./fpts2-immutability).
 
 _Acknowledgement:_ this article was inspired by the course [Functional-Light JavaScript, v3 by Kyle Simpson](https://frontendmasters.com/courses/functional-javascript-v3/).
