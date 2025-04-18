@@ -113,8 +113,6 @@ return hs;
 return hs.toReversed();
 ```
 
-There are also other mutating methods:
-
 ## Freezing
 
 Besides marking properties on objects as `readonly` to let the TypeScript compliler notice unintended mutations, we can also add runtime protection by sealing or freezing objects with `Object.seal()` or `Object.freeze()`. Freezing offers the most protection of the two: existing properties are made immutable and can't be reassigned. It will fail silently, or when called from a strict mode context, it will throw a TypeError.
@@ -140,6 +138,6 @@ In this example, `draft` is **not** mutable. It was made immutable by Immer. But
 
 While the library itself is solid, it introduces one drawback that you should be very wary of in my opinion: someone who is not familiar with Immer might be confused and think this object is mutable. At a bad moment, it may even be copy-pasted to a place that is not protected by Immer. That's why I would not disregard the more verbose, but explicitly immutable, alternatives.
 
-In the next chapter we will look at the functional operators.
+In the [next chapter](./fpts3-putting-fun-in-functional-operators) we will look at the functional operators.
 
 _Acknowledgement:_ this article was inspired by the course [Functional-Light JavaScript, v3 by Kyle Simpson](https://frontendmasters.com/courses/functional-javascript-v3/).
